@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('examens', function (Blueprint $table) {
             $table->id();
             $table->string('niveau_examen');
-            $table->string('matiere_examne') ; 
+            $table->string('matiere_examen') ; 
             $table->integer('annee_examen');
             $table->string('examen');
             $table->string('url_examen') ; 

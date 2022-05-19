@@ -17,12 +17,11 @@ class ExamenFactory extends Factory
     public function definition()
     {
      
-            $path = $this->faker->file('storage/app/public/files');
+            $path = $this->faker->image('storage/app/public/images', 640, 800, 'examen', true, true, 'examen', false);
         return [
-            'niveau_examen' => $this->faker->string(),
-            'matiere_examen' => $this->faker->string(),
+            'niveau_examen' => $this->faker->word(),
+            'matiere_examen' => $this->faker->sentence(),
             'annee_examen' => $this->faker->year(),
-            
             'examen'=>$path ,
             'url_examen' => config('app.url') . '/storage/' .Str::after($path, 'public/'),
         ];

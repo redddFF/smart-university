@@ -18,7 +18,7 @@ class EventFactory extends Factory
      */
     public function definition()
     {
-        $path = $this->faker->image('storage/app/public/images', 640, 800, 'sport', true, true, 'sport', false);
+        $path = $this->faker->image('storage/app/public/images', 640, 800, 'event', true, true, 'event', false);
         return [
             'title' => $this->faker->sentence(),
             'description' => $this->faker->words(2, true),
