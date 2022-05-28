@@ -10,4 +10,9 @@ class Event extends Model
     use HasFactory;
     protected $perPage=4 ; 
     protected $guarded=[];
+
+    
+    public function owner(){
+        return $this->belongsTo(User::class,'user_id');
+    }
 }

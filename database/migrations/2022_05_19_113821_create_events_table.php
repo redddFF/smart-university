@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title',100);
             $table->text('description');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('poster');
             $table->string('urlPoster');
             $table->date('dateDebut');

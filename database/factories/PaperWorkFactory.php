@@ -18,6 +18,7 @@ class PaperWorkFactory extends Factory
     {
         $path = $this->faker->image('storage/app/public/images', 640, 800, 'paper', true, true, 'paper', false);
         return [
+            'description'=>$this->faker->paragraph(),
             'titre_paperwork' => $this->faker->word(),
             'paperwork'=>$path ,
             'url_paperwork' => config('app.url') . '/storage/' .Str::after($path, 'public/'),

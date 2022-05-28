@@ -19,9 +19,13 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+       
         User::factory(1)
-            ->has(Pfe::factory(1))->count(2)->create();
+            ->has(
+                PaperWork::factory(2))->count(4)->create(); 
         User::factory(1)
-            ->has(PaperWork::factory(1))->count(2)->create();   
+            ->has(Pfe::factory(2))->count(4)->create(); 
+        User::factory(1)
+            ->has(Event::factory(2))->count(4)->create();     
     }
 }

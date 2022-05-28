@@ -19,6 +19,7 @@ class ExamenFactory extends Factory
      
             $path = $this->faker->image('storage/app/public/images', 640, 800, 'examen', true, true, 'examen', false);
         return [
+            'titre_examen' => $this->faker->word(),
             'niveau_examen' => $this->faker->word(),
             'matiere_examen' => $this->faker->sentence(),
             'annee_examen' => $this->faker->year(),

@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('paper_works', function (Blueprint $table) {
             $table->id();
             $table->string('titre_paperwork');
+            $table->string('description');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('paperwork');
             $table->string('url_paperwork') ;           

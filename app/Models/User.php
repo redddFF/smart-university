@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\PaperWork;
+
 
 class User extends Authenticatable
 {
@@ -46,9 +48,13 @@ class User extends Authenticatable
     {
         return $this->hasMany(Pfe::class);
     }
-    public function paperwork()
+
+    public function paperworks()
     {
-        return $this->hasMany(Paperwork::class);
+        return $this->hasMany(PaperWork::class);
     }
-    
+    public function event()
+    {
+        return $this->hasMany(Event::class);
+    }
 }
