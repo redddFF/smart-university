@@ -18,16 +18,16 @@ use Illuminate\Support\Facades\Route;
 
 
  Route::get('/paperwork',paperworkController::class)->name('paperwork') ; 
-//Route::resource('paperwork',paperworkController::class ) ; 
+////Route::resource('paperwork',paperworkController::class ) ; 
 
 Route::get('/event',eventController::class)->name('event') ; 
-//Route::resource('event',eventController::class ) ; 
+////Route::resource('event',eventController::class ) ; 
 
 Route::get('/pfe',pfeController::class)->name('pfe') ; 
-//Route::resource('pfe',pfeController::class ) ; 
+////Route::resource('pfe',pfeController::class ) ; 
 
 Route::get('/examen',examenController::class)->name('examen') ; 
-//Route::resource('examen',examenController::class ) ;
+////Route::resource('examen',examenController::class ) ;
 
 
 
