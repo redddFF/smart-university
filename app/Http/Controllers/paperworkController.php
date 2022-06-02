@@ -12,25 +12,25 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str ;
 
-        Auth::logout();
-        Auth::login(User::first()) ; 
+      //  Auth::logout();
+     //   Auth::login(User::first()) ; 
 
         
 class paperworkController extends Controller
 {
-    public function __invoke(Request $request)
-    {
-      
+            public function __invoke(Request $request)
+            {
+            
 
-       $paperWorks=PaperWork::paginate();
-       $data=[
-           'title' => 'paperworks',
-           'description' => 'Liste des papiers',
-           'heading' => config('app.name'),
-           'paperWorks' => $paperWorks
-       ];
-       return view('paperwork.index',$data);
-    }
+            $paperWorks=PaperWork::paginate();
+            $data=[
+                'title' => 'paperworks',
+                'description' => 'Liste des papiers',
+                'heading' => config('app.name'),
+                'paperWorks' => $paperWorks
+            ];
+            return view('paperwork.index',$data);
+            }
 
   
    

@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str ; 
 
-Auth::logout();
-Auth::login(User::first()) ; 
+//Auth::logout();
+//Auth::login(User::first()) ; 
 
 class eventController extends Controller
 {
@@ -27,7 +27,7 @@ class eventController extends Controller
            'heading' => config('app.name'),
            'events' => $events
        ];
-       return view('pfe.index',$data);
+       return view('event.index',$data);
     }
 
     public function index()

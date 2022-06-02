@@ -13,8 +13,8 @@ use Illuminate\Support\Str ;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
-Auth::logout();
-Auth::login(User::first()) ; 
+//Auth::logout();
+//Auth::login(User::first()) ; 
 class examenController extends Controller
 {
     public function __invoke(Request $request)

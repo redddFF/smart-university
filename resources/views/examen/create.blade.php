@@ -1,5 +1,5 @@
-@extends('layouts.main')
-@section('papier')
+@extends('layouts.app')
+@section('content')
 
 <form action="{{route('examen.store')}}" method="POST" enctype="multipart/form-data">
         @csrf

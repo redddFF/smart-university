@@ -1,6 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.app')
  
-@section('papier')
+@section('content')
     <a type="button" class="btn btn-primary" href="{{route('event.index')}}">Back</a>
    
         <a type="button" class="btn btn-primary" href="{{route('event.edit',[$event])}}">Update</a>

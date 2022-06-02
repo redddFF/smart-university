@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
-Auth::logout();
-Auth::login(User::first()) ; 
+//Auth::logout();
+//Auth::login(User::first()) ; 
 
 class pfeController extends Controller
 {

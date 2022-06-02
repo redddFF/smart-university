@@ -1,6 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
-@section('papier')
+@section('content')
 
     <form action="{{route('event.update',[$event])}}" method="POST" enctype="multipart/form-data">
         @csrf

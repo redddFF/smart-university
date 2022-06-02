@@ -1,6 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
-@section('papier')
+@section('content')
 
 @if(Auth::user()->id != NULL)
         <a type="button" href="{{route('paperwork.create')}}" class="btn btn-primary">Ajouter</a>

@@ -1,5 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.app')
  
-@section('papier')
+@section('content')
+
     @include('layouts.liste-examens') ; 
 @endsection

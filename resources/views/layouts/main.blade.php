@@ -60,10 +60,7 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="  "> About </a>
-                </li>
-                <li class="nav-item ">
+                     <li class="nav-item ">
                   <a class="nav-link" href="/examen"> Examens </a>
                 </li>
                 <li class="nav-item ">
@@ -77,9 +74,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/event">Events</a>
                 </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="">Admin</a>
-                </li>
+             
               </ul>
               <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -92,14 +87,7 @@
 
     @yield('welcome')
     @yield('papier')
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2022 All Rights Reserved By
-      MSW
-    </p>
-  </section>
-  <!-- footer section -->
+ 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
